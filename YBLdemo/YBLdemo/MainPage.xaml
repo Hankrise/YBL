@@ -8,6 +8,106 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
 
+        <Rectangle Fill="Orange"  Height="150"/>
+        <TextBlock Text="刘大夫中医" Margin="20,50,0,0" FontSize="36" Foreground="White" />
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,0,0,0" Background="#FFFFE0A6" >
+
+            <!--TextBlock Text="姓名:" VerticalAlignment="Center" Margin="20,0,0,0"/-->
+            <TextBox  Header="姓名" Text=""  
+                      BorderThickness="2,2,2,2"  
+                      Margin="20,0,0,0" 
+                      VerticalAlignment="Top" 
+                      Height="60"  BorderBrush="Transparent" PlaceholderText="_________" Background="{x:Null}"/>
+            <!--TextBlock Text="性别:" VerticalAlignment="Center" Margin="20,0,0,0"/-->
+            <ComboBox Header="性别" 
+                      BorderThickness="2,2,2,2" 
+                      Margin="20,0,0,0" 
+                      VerticalAlignment="Top"
+                      
+                      BorderBrush="Transparent" Background="{x:Null}">
+                <ComboBoxItem Content="男"/>
+                <ComboBoxItem Content="女"/>
+            </ComboBox>
+            <!--TextBlock Text="出生年月:" VerticalAlignment="Center" Margin="20,0,0,0"/-->
+            <DatePicker Header="出生年月" 
+                        BorderThickness="0" 
+                        Margin="20,0,0,0"
+                        DayVisible="False"  
+                        VerticalAlignment="Top"   >
+                <DatePicker.Background>
+                    <ImageBrush Stretch="Fill"/>
+                </DatePicker.Background>
+            </DatePicker>
+
+
+        </StackPanel>
+        <Rectangle Grid.Row="2" Fill="Orange" Margin="0,0,0,0" Height="10"/>
+        <StackPanel Grid.Row="3" Orientation="Vertical" Margin="0,0,0,0" Background="#FFFFE0A6" >
+            <TextBlock Text="脉诊" Margin="20,0,0,0" FontSize="18"/>
+            <StackPanel Margin="60,0,0,0" Orientation="Horizontal">
+                <TextBlock Text="右"/>
+                <StackPanel Orientation="Vertical" >
+
+                    <!--Border BorderThickness="1" BorderBrush="Black">
+                         
+                        <ComboBox  SelectedIndex="1" Height="27" BorderBrush="{x:Null}" Background="{x:Null}" >
+
+                            <ComboBoxItem>
+                                <TextBlock Text="&#xE915;" FontFamily="Segoe MDL2 Assets"  />
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <TextBlock Text="&#xF138;" FontFamily="Segoe MDL2 Assets"  />
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <TextBlock Text="&#xECCB;" FontFamily="Segoe MDL2 Assets"  />
+                            </ComboBoxItem>
+                        </ComboBox>
+                    </Border-->
+
+                    <!--Border>
+                        <ListBox RenderTransformOrigin="0,0" >
+                            <ListBox.RenderTransform>
+                                <CompositeTransform Rotation="-270" ScaleY="-1"/>
+                            </ListBox.RenderTransform>
+                            <ListBoxItem >
+                                <TextBlock Text="&#xE915;" FontFamily="Segoe MDL2 Assets"  />
+                            </ListBoxItem>
+                            <ListBoxItem>
+                                <TextBlock Text="&#xF138;" FontFamily="Segoe MDL2 Assets"  />
+                            </ListBoxItem>
+                            <ListBoxItem>
+                                <TextBlock Text="&#xECCB;" FontFamily="Segoe MDL2 Assets"  />
+                            </ListBoxItem>
+                        </ListBox>
+                    </Border-->
+
+                    <Border>
+                        <Button Width="77" Height="24" Padding="0"  >
+                            <TextBlock Text="&#xECCB;" FontFamily="Segoe MDL2 Assets"/>
+
+                        </Button>
+                    </Border>
+
+
+
+
+
+                </StackPanel>
+                <TextBlock Text="左"/>
+                <StackPanel Orientation="Vertical">
+
+                </StackPanel>
+            </StackPanel>
+
+        </StackPanel>
+        <Rectangle Grid.Row="4" Fill="Orange" Margin="0,0,0,0" Height="10"/>
     </Grid>
 </Page>

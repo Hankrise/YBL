@@ -25,6 +25,68 @@ namespace YBLdemo
         public MainPage()
         {
             this.InitializeComponent();
+            MyFrame.Navigate(typeof(HomePage));
+        }
+
+        private void HamburgerButton_Click(object sender, RoutedEventArgs e)
+        {
+            MySplitView.IsPaneOpen = !MySplitView.IsPaneOpen;
+        }
+
+        private void HomePage_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            MySplitView.IsPaneOpen = false;
+            MySplitView.DisplayMode = SplitViewDisplayMode.Overlay;
+            MyFrame.Navigate(typeof(HomePage));
+            AppText.Text = "刘大夫中医";
+        }
+
+        private void NewCase_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            MySplitView.IsPaneOpen = false;
+            MySplitView.DisplayMode = SplitViewDisplayMode.CompactOverlay;
+            MyFrame.Navigate(typeof(NewCasePage));
+            AppText.Text = "新增病例";
+        }
+
+        private void NewPatient_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            MySplitView.IsPaneOpen = false;
+            MySplitView.DisplayMode = SplitViewDisplayMode.CompactOverlay;
+            MyFrame.Navigate(typeof(NewPatientPage));
+            AppText.Text = "新增患者";
+        }
+
+        private void NewRecord_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            MySplitView.IsPaneOpen = false;
+            MySplitView.DisplayMode = SplitViewDisplayMode.CompactOverlay;
+            MyFrame.Navigate(typeof(NewRecordPage));
+            AppText.Text = "增加记录";
+        }
+
+        private void Recent_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            MySplitView.IsPaneOpen = false;
+            MySplitView.DisplayMode = SplitViewDisplayMode.CompactOverlay;
+            MyFrame.Navigate(typeof(RecentPage));
+            AppText.Text = "最近";
+        }
+
+        private void Find_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            MySplitView.IsPaneOpen = false;
+            MySplitView.DisplayMode = SplitViewDisplayMode.CompactOverlay;
+            MyFrame.Navigate(typeof(FindPage));
+            AppText.Text = "查找";
+        }
+
+        private void Statistics_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            MySplitView.IsPaneOpen = false;
+            MySplitView.DisplayMode = SplitViewDisplayMode.CompactOverlay;
+            MyFrame.Navigate(typeof(StatisticsPage));
+            AppText.Text = "统计";
         }
     }
 }

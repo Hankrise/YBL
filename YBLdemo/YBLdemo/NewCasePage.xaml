@@ -8,6 +8,11 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock Text="新增病例" />
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Frame Name="NewCaseFrame1"></Frame>
+        <Frame Name="NewCaseFrame2" Grid.Row="1"></Frame>
     </Grid>
 </Page>

@@ -21,6 +21,8 @@
                     Height="40" Width="40"
                     RelativePanel.AlignLeftWithPanel="True"
                     />
+            <Rectangle Fill="LightGoldenrodYellow" Height="40" RelativePanel.RightOf="HamburgerButton"
+                       RelativePanel.AlignRightWithPanel="True"/>
             <TextBlock Name="AppText"
                        Text="刘大夫中医"
                        RelativePanel.RightOf="HamburgerButton"

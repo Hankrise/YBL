@@ -36,13 +36,12 @@
                     Click="NewCaseHP_Button_Click"
                     HorizontalAlignment="Stretch" >
                 <RelativePanel Height="150">
-                    <TextBlock Name="NewPatientImg" Text="&#xE8FA;" FontFamily="Segoe MDL2 Assets" 
-                               FontSize="56"
-                               RelativePanel.AlignHorizontalCenterWithPanel="True"
-                               RelativePanel.AlignVerticalCenterWithPanel="True"/>
-                    <TextBlock Text="新增患者"  VerticalAlignment="Center" 
-                               RelativePanel.AlignHorizontalCenterWithPanel="True"
-                               RelativePanel.Below="NewPatientImg"/>
+                    <StackPanel RelativePanel.AlignHorizontalCenterWithPanel="True"
+                                RelativePanel.AlignVerticalCenterWithPanel="True">
+                        <TextBlock Name="NewPatientImg" Text="&#xE8FA;" FontFamily="Segoe MDL2 Assets" 
+                               FontSize="56"/>
+                        <TextBlock Text="新增患者"  VerticalAlignment="Center" />
+                    </StackPanel>
                 </RelativePanel>
             </Button>
         </Grid>

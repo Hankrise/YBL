@@ -25,6 +25,8 @@ namespace YBLdemo
         public NewCasePage()
         {
             this.InitializeComponent();
+            NewCaseFrame1.Navigate(typeof(InfoPage));
+            NewCaseFrame2.Navigate(typeof(MXPage));
         }
     }
 }

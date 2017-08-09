@@ -82,7 +82,8 @@
                 </ListBox>
             </SplitView.Pane>
             <SplitView.Content>
-                <Frame Name="MyFrame">
+                <Frame Name="MyFrame" x:FieldModifier="Public">
+                    <!--//https://www.zhihu.com/question/46272393-->
                     
                 </Frame>
             </SplitView.Content>

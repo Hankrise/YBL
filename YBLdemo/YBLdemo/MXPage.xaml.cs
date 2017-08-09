@@ -20,16 +20,11 @@ namespace YBLdemo
     /// <summary>
     /// 可用于自身或导航至 Frame 内部的空白页。
     /// </summary>
-    public sealed partial class HomePage : Page
+    public sealed partial class MXPage : Page
     {
-        public HomePage()
+        public MXPage()
         {
             this.InitializeComponent();
-        }
-
-        private void NewCaseHP_Button_Click(object sender, RoutedEventArgs e)
-        {
-            //MainPage.Current.MyFrame.Navigate(typeof(NewCasePage));
         }
     }
 }

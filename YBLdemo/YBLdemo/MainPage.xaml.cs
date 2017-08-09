@@ -22,10 +22,12 @@ namespace YBLdemo
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        public static MainPage Current;//https://www.zhihu.com/question/46272393
         public MainPage()
         {
             this.InitializeComponent();
             MyFrame.Navigate(typeof(HomePage));
+            Current = this;//https://www.zhihu.com/question/46272393
         }
 
         private void HamburgerButton_Click(object sender, RoutedEventArgs e)

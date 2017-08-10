@@ -8,66 +8,239 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        
-        <Rectangle Grid.Row="2" Fill="Orange" Margin="0,0,0,0" Height="10"/>
-        <StackPanel Grid.Row="3" Orientation="Vertical" Margin="0,0,0,0"  >
-            <TextBlock Text="脉诊" Margin="20,0,0,0" FontSize="18"/>
-            <StackPanel Margin="60,0,0,0" Orientation="Horizontal">
-                <TextBlock Text="右"/>
-                <StackPanel Orientation="Vertical" >
+        <Rectangle  Fill="Orange"  Height="1" VerticalAlignment="Top"/>
+        <StackPanel  Orientation="Vertical" Margin="0,0,0,0"  >
+            <TextBlock Text="脉象" Margin="20,0,0,0" FontSize="18"/>
+            <StackPanel  Orientation="Horizontal">
+                <Canvas HorizontalAlignment="Left" Height="100" Margin="20,0,0,0" Width="100">
+                    <Rectangle Fill="Gray" Height="72" Canvas.Left="29"  Canvas.Top="14" Width="2"/>
+                    <Rectangle Fill="Gray" Height="2" Canvas.Left="24"  Canvas.Top="37" Width="12"/>
+                    <Rectangle Fill="Gray" Height="2" Canvas.Left="24"  Canvas.Top="61" Width="12"/>
+                    <Rectangle Fill="Gray" Height="72" Canvas.Left="69"  Canvas.Top="14" Width="2"/>
+                    <Rectangle Fill="Gray" Height="2" Canvas.Left="64"  Canvas.Top="36" Width="12"/>
+                    <Rectangle Fill="Gray" Height="2" Canvas.Left="64"  Canvas.Top="62" Width="12"/>
+                    <Button Height="24" Padding="8,2" Width="36" Canvas.Left="12"  Canvas.Top="14" Background="{x:Null}"
+                        >
+                        <TextBlock Name="MX11" Text="" FontFamily="Segoe MDL2 Assets" />
+                        <Button.Flyout>
+                            <MenuFlyout Placement="Right"  >
+                                <MenuFlyoutItem Text="&#xE915;" FontFamily="Segoe MDL2 Assets" Click="MX111"/>
+                                <MenuFlyoutItem Text="&#xF138;" FontFamily="Segoe MDL2 Assets" Click="MX112"/>
+                                <MenuFlyoutItem Text="&#xECCB;" FontFamily="Segoe MDL2 Assets" Click="MX113"/>
+                            </MenuFlyout>
+                        </Button.Flyout>
+                    </Button>
+                    <Button Height="24" Padding="8,2" Width="36" Canvas.Left="12"  Canvas.Top="38" Background="{x:Null}"
+                        >
+                        <TextBlock Name="MX12" Text="" FontFamily="Segoe MDL2 Assets" />
+                        <Button.Flyout>
+                            <MenuFlyout Placement="Right"  >
+                                <MenuFlyoutItem Text="&#xE915;" FontFamily="Segoe MDL2 Assets" Click="MX121"/>
+                                <MenuFlyoutItem Text="&#xF138;" FontFamily="Segoe MDL2 Assets" Click="MX122"/>
+                                <MenuFlyoutItem Text="&#xECCB;" FontFamily="Segoe MDL2 Assets" Click="MX123"/>
+                            </MenuFlyout>
+                        </Button.Flyout>
+                    </Button>
+                    <Button Height="24" Padding="8,2" Width="36" Canvas.Left="12"  Canvas.Top="62" Background="{x:Null}"
+                        >
+                        <TextBlock Name="MX13" Text="" FontFamily="Segoe MDL2 Assets" />
+                        <Button.Flyout>
+                            <MenuFlyout Placement="Right"  >
+                                <MenuFlyoutItem Text="&#xE915;" FontFamily="Segoe MDL2 Assets" Click="MX131"/>
+                                <MenuFlyoutItem Text="&#xF138;" FontFamily="Segoe MDL2 Assets" Click="MX132"/>
+                                <MenuFlyoutItem Text="&#xECCB;" FontFamily="Segoe MDL2 Assets" Click="MX133"/>
+                            </MenuFlyout>
+                        </Button.Flyout>
+                    </Button>
+                    <Button Height="24" Padding="8,2" Width="36" Canvas.Left="52"  Canvas.Top="14" Background="{x:Null}"
+                        >
+                        <TextBlock Name="MX14" Text="" FontFamily="Segoe MDL2 Assets" />
+                        <Button.Flyout>
+                            <MenuFlyout Placement="Right"  >
+                                <MenuFlyoutItem Text="&#xE915;" FontFamily="Segoe MDL2 Assets" Click="MX141"/>
+                                <MenuFlyoutItem Text="&#xF138;" FontFamily="Segoe MDL2 Assets" Click="MX142"/>
+                                <MenuFlyoutItem Text="&#xECCB;" FontFamily="Segoe MDL2 Assets" Click="MX143"/>
+                            </MenuFlyout>
+                        </Button.Flyout>
+                    </Button>
+                    <Button Height="24" Padding="8,2" Width="36" Canvas.Left="52"  Canvas.Top="38" Background="{x:Null}"
+                        >
+                        <TextBlock Name="MX15" Text="" FontFamily="Segoe MDL2 Assets" />
+                        <Button.Flyout>
+                            <MenuFlyout Placement="Right"  >
+                                <MenuFlyoutItem Text="&#xE915;" FontFamily="Segoe MDL2 Assets" Click="MX151"/>
+                                <MenuFlyoutItem Text="&#xF138;" FontFamily="Segoe MDL2 Assets" Click="MX152"/>
+                                <MenuFlyoutItem Text="&#xECCB;" FontFamily="Segoe MDL2 Assets" Click="MX153"/>
+                            </MenuFlyout>
+                        </Button.Flyout>
+                    </Button>
+                    <Button Height="24" Padding="8,2" Width="36" Canvas.Left="52"  Canvas.Top="62" Background="{x:Null}"
+                        >
+                        <TextBlock Name="MX16" Text="" FontFamily="Segoe MDL2 Assets" />
+                        <Button.Flyout>
+                            <MenuFlyout Placement="Right"  >
+                                <MenuFlyoutItem Text="&#xE915;" FontFamily="Segoe MDL2 Assets" Click="MX161"/>
+                                <MenuFlyoutItem Text="&#xF138;" FontFamily="Segoe MDL2 Assets" Click="MX162"/>
+                                <MenuFlyoutItem Text="&#xECCB;" FontFamily="Segoe MDL2 Assets" Click="MX163"/>
+                            </MenuFlyout>
+                        </Button.Flyout>
+                    </Button>
 
-                    <!--Border BorderThickness="1" BorderBrush="Black">
-                         
-                        <ComboBox  SelectedIndex="1" Height="27" BorderBrush="{x:Null}" Background="{x:Null}" >
+                </Canvas>
+                <Canvas HorizontalAlignment="Left" Height="100" Margin="10,0,0,0" Width="100">
+                    <Rectangle Fill="Gray" Height="72" Canvas.Left="29"  Canvas.Top="14" Width="2"/>
+                    <Rectangle Fill="Gray" Height="2" Canvas.Left="24"  Canvas.Top="37" Width="12"/>
+                    <Rectangle Fill="Gray" Height="2" Canvas.Left="24"  Canvas.Top="61" Width="12"/>
+                    <Rectangle Fill="Gray" Height="72" Canvas.Left="69"  Canvas.Top="14" Width="2"/>
+                    <Rectangle Fill="Gray" Height="2" Canvas.Left="64"  Canvas.Top="36" Width="12"/>
+                    <Rectangle Fill="Gray" Height="2" Canvas.Left="64"  Canvas.Top="62" Width="12"/>
+                    <Button Height="24" Padding="8,2" Width="36" Canvas.Left="12"  Canvas.Top="14" Background="{x:Null}"
+                        >
+                        <TextBlock Name="MX21" Text="" FontFamily="Segoe MDL2 Assets" />
+                        <Button.Flyout>
+                            <MenuFlyout Placement="Right"  >
+                                <MenuFlyoutItem Text="&#xE915;" FontFamily="Segoe MDL2 Assets" Click="MX211"/>
+                                <MenuFlyoutItem Text="&#xF138;" FontFamily="Segoe MDL2 Assets" Click="MX212"/>
+                                <MenuFlyoutItem Text="&#xECCB;" FontFamily="Segoe MDL2 Assets" Click="MX213"/>
+                            </MenuFlyout>
+                        </Button.Flyout>
+                    </Button>
+                    <Button Height="24" Padding="8,2" Width="36" Canvas.Left="12"  Canvas.Top="38" Background="{x:Null}"
+                        >
+                        <TextBlock Name="MX22" Text="" FontFamily="Segoe MDL2 Assets" />
+                        <Button.Flyout>
+                            <MenuFlyout Placement="Right"  >
+                                <MenuFlyoutItem Text="&#xE915;" FontFamily="Segoe MDL2 Assets" Click="MX221"/>
+                                <MenuFlyoutItem Text="&#xF138;" FontFamily="Segoe MDL2 Assets" Click="MX222"/>
+                                <MenuFlyoutItem Text="&#xECCB;" FontFamily="Segoe MDL2 Assets" Click="MX223"/>
+                            </MenuFlyout>
+                        </Button.Flyout>
+                    </Button>
+                    <Button Height="24" Padding="8,2" Width="36" Canvas.Left="12"  Canvas.Top="62" Background="{x:Null}"
+                        >
+                        <TextBlock Name="MX23" Text="" FontFamily="Segoe MDL2 Assets" />
+                        <Button.Flyout>
+                            <MenuFlyout Placement="Right"  >
+                                <MenuFlyoutItem Text="&#xE915;" FontFamily="Segoe MDL2 Assets" Click="MX231"/>
+                                <MenuFlyoutItem Text="&#xF138;" FontFamily="Segoe MDL2 Assets" Click="MX232"/>
+                                <MenuFlyoutItem Text="&#xECCB;" FontFamily="Segoe MDL2 Assets" Click="MX233"/>
+                            </MenuFlyout>
+                        </Button.Flyout>
+                    </Button>
+                    <Button Height="24" Padding="8,2" Width="36" Canvas.Left="52"  Canvas.Top="14" Background="{x:Null}"
+                        >
+                        <TextBlock Name="MX24" Text="" FontFamily="Segoe MDL2 Assets" />
+                        <Button.Flyout>
+                            <MenuFlyout Placement="Right"  >
+                                <MenuFlyoutItem Text="&#xE915;" FontFamily="Segoe MDL2 Assets" Click="MX241"/>
+                                <MenuFlyoutItem Text="&#xF138;" FontFamily="Segoe MDL2 Assets" Click="MX242"/>
+                                <MenuFlyoutItem Text="&#xECCB;" FontFamily="Segoe MDL2 Assets" Click="MX243"/>
+                            </MenuFlyout>
+                        </Button.Flyout>
+                    </Button>
+                    <Button Height="24" Padding="8,2" Width="36" Canvas.Left="52"  Canvas.Top="38" Background="{x:Null}"
+                        >
+                        <TextBlock Name="MX25" Text="" FontFamily="Segoe MDL2 Assets" />
+                        <Button.Flyout>
+                            <MenuFlyout Placement="Right"  >
+                                <MenuFlyoutItem Text="&#xE915;" FontFamily="Segoe MDL2 Assets" Click="MX251"/>
+                                <MenuFlyoutItem Text="&#xF138;" FontFamily="Segoe MDL2 Assets" Click="MX252"/>
+                                <MenuFlyoutItem Text="&#xECCB;" FontFamily="Segoe MDL2 Assets" Click="MX253"/>
+                            </MenuFlyout>
+                        </Button.Flyout>
+                    </Button>
+                    <Button Height="24" Padding="8,2" Width="36" Canvas.Left="52"  Canvas.Top="62" Background="{x:Null}"
+                        >
+                        <TextBlock Name="MX26" Text="" FontFamily="Segoe MDL2 Assets" />
+                        <Button.Flyout>
+                            <MenuFlyout Placement="Right"  >
+                                <MenuFlyoutItem Text="&#xE915;" FontFamily="Segoe MDL2 Assets" Click="MX261"/>
+                                <MenuFlyoutItem Text="&#xF138;" FontFamily="Segoe MDL2 Assets" Click="MX262"/>
+                                <MenuFlyoutItem Text="&#xECCB;" FontFamily="Segoe MDL2 Assets" Click="MX263"/>
+                            </MenuFlyout>
+                        </Button.Flyout>
+                    </Button>
 
-                            <ComboBoxItem>
-                                <TextBlock Text="&#xE915;" FontFamily="Segoe MDL2 Assets"  />
-                            </ComboBoxItem>
-                            <ComboBoxItem>
-                                <TextBlock Text="&#xF138;" FontFamily="Segoe MDL2 Assets"  />
-                            </ComboBoxItem>
-                            <ComboBoxItem>
-                                <TextBlock Text="&#xECCB;" FontFamily="Segoe MDL2 Assets"  />
-                            </ComboBoxItem>
-                        </ComboBox>
-                    </Border-->
+                </Canvas>
+                <Canvas HorizontalAlignment="Left" Height="100" Margin="10,0,0,0" Width="100">
+                    <Rectangle Fill="Gray" Height="72" Canvas.Left="29"  Canvas.Top="14" Width="2"/>
+                    <Rectangle Fill="Gray" Height="2" Canvas.Left="24"  Canvas.Top="37" Width="12"/>
+                    <Rectangle Fill="Gray" Height="2" Canvas.Left="24"  Canvas.Top="61" Width="12"/>
+                    <Rectangle Fill="Gray" Height="72" Canvas.Left="69"  Canvas.Top="14" Width="2"/>
+                    <Rectangle Fill="Gray" Height="2" Canvas.Left="64"  Canvas.Top="36" Width="12"/>
+                    <Rectangle Fill="Gray" Height="2" Canvas.Left="64"  Canvas.Top="62" Width="12"/>
+                    <Button Height="24" Padding="8,2" Width="36" Canvas.Left="12"  Canvas.Top="14" Background="{x:Null}"
+                        >
+                        <TextBlock Name="MX31" Text="" FontFamily="Segoe MDL2 Assets" />
+                        <Button.Flyout>
+                            <MenuFlyout Placement="Right"  >
+                                <MenuFlyoutItem Text="&#xE915;" FontFamily="Segoe MDL2 Assets" Click="MX311"/>
+                                <MenuFlyoutItem Text="&#xF138;" FontFamily="Segoe MDL2 Assets" Click="MX312"/>
+                                <MenuFlyoutItem Text="&#xECCB;" FontFamily="Segoe MDL2 Assets" Click="MX313"/>
+                            </MenuFlyout>
+                        </Button.Flyout>
+                    </Button>
+                    <Button Height="24" Padding="8,2" Width="36" Canvas.Left="12"  Canvas.Top="38" Background="{x:Null}"
+                        >
+                        <TextBlock Name="MX32" Text="" FontFamily="Segoe MDL2 Assets" />
+                        <Button.Flyout>
+                            <MenuFlyout Placement="Right"  >
+                                <MenuFlyoutItem Text="&#xE915;" FontFamily="Segoe MDL2 Assets" Click="MX321"/>
+                                <MenuFlyoutItem Text="&#xF138;" FontFamily="Segoe MDL2 Assets" Click="MX322"/>
+                                <MenuFlyoutItem Text="&#xECCB;" FontFamily="Segoe MDL2 Assets" Click="MX323"/>
+                            </MenuFlyout>
+                        </Button.Flyout>
+                    </Button>
+                    <Button Height="24" Padding="8,2" Width="36" Canvas.Left="12"  Canvas.Top="62" Background="{x:Null}"
+                        >
+                        <TextBlock Name="MX33" Text="" FontFamily="Segoe MDL2 Assets" />
+                        <Button.Flyout>
+                            <MenuFlyout Placement="Right"  >
+                                <MenuFlyoutItem Text="&#xE915;" FontFamily="Segoe MDL2 Assets" Click="MX331"/>
+                                <MenuFlyoutItem Text="&#xF138;" FontFamily="Segoe MDL2 Assets" Click="MX332"/>
+                                <MenuFlyoutItem Text="&#xECCB;" FontFamily="Segoe MDL2 Assets" Click="MX333"/>
+                            </MenuFlyout>
+                        </Button.Flyout>
+                    </Button>
+                    <Button Height="24" Padding="8,2" Width="36" Canvas.Left="52"  Canvas.Top="14" Background="{x:Null}"
+                        >
+                        <TextBlock Name="MX34" Text="" FontFamily="Segoe MDL2 Assets" />
+                        <Button.Flyout>
+                            <MenuFlyout Placement="Right"  >
+                                <MenuFlyoutItem Text="&#xE915;" FontFamily="Segoe MDL2 Assets" Click="MX341"/>
+                                <MenuFlyoutItem Text="&#xF138;" FontFamily="Segoe MDL2 Assets" Click="MX342"/>
+                                <MenuFlyoutItem Text="&#xECCB;" FontFamily="Segoe MDL2 Assets" Click="MX343"/>
+                            </MenuFlyout>
+                        </Button.Flyout>
+                    </Button>
+                    <Button Height="24" Padding="8,2" Width="36" Canvas.Left="52"  Canvas.Top="38" Background="{x:Null}"
+                        >
+                        <TextBlock Name="MX35" Text="" FontFamily="Segoe MDL2 Assets" />
+                        <Button.Flyout>
+                            <MenuFlyout Placement="Right"  >
+                                <MenuFlyoutItem Text="&#xE915;" FontFamily="Segoe MDL2 Assets" Click="MX351"/>
+                                <MenuFlyoutItem Text="&#xF138;" FontFamily="Segoe MDL2 Assets" Click="MX352"/>
+                                <MenuFlyoutItem Text="&#xECCB;" FontFamily="Segoe MDL2 Assets" Click="MX353"/>
+                            </MenuFlyout>
+                        </Button.Flyout>
+                    </Button>
+                    <Button Height="24" Padding="8,2" Width="36" Canvas.Left="52"  Canvas.Top="62" Background="{x:Null}"
+                        >
+                        <TextBlock Name="MX36" Text="" FontFamily="Segoe MDL2 Assets" />
+                        <Button.Flyout>
+                            <MenuFlyout Placement="Right"  >
+                                <MenuFlyoutItem Text="&#xE915;" FontFamily="Segoe MDL2 Assets" Click="MX361"/>
+                                <MenuFlyoutItem Text="&#xF138;" FontFamily="Segoe MDL2 Assets" Click="MX362"/>
+                                <MenuFlyoutItem Text="&#xECCB;" FontFamily="Segoe MDL2 Assets" Click="MX363"/>
+                            </MenuFlyout>
+                        </Button.Flyout>
+                    </Button>
 
-                    <!--Border>
-                        <ListBox RenderTransformOrigin="0,0" >
-                            <ListBox.RenderTransform>
-                                <CompositeTransform Rotation="-270" ScaleY="-1"/>
-                            </ListBox.RenderTransform>
-                            <ListBoxItem >
-                                <TextBlock Text="&#xE915;" FontFamily="Segoe MDL2 Assets"  />
-                            </ListBoxItem>
-                            <ListBoxItem>
-                                <TextBlock Text="&#xF138;" FontFamily="Segoe MDL2 Assets"  />
-                            </ListBoxItem>
-                            <ListBoxItem>
-                                <TextBlock Text="&#xECCB;" FontFamily="Segoe MDL2 Assets"  />
-                            </ListBoxItem>
-                        </ListBox>
-                    </Border-->
+                </Canvas>
 
-                    <Border>
-                        <Button Width="77" Height="24" Padding="0"  >
-                            <TextBlock Text="&#xECCB;" FontFamily="Segoe MDL2 Assets"/>
-
-                        </Button>
-                    </Border>
-
-
-
-
-
-                </StackPanel>
-                <TextBlock Text="左"/>
-                <StackPanel Orientation="Vertical">
-
-                </StackPanel>
             </StackPanel>
-
+            
         </StackPanel>
-        <Rectangle Grid.Row="4" Fill="Orange" Margin="0,0,0,0" Height="10"/>
+
     </Grid>
 </Page>

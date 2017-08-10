@@ -9,28 +9,30 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
-            <RowDefinition Height="50"/>
+            <RowDefinition Height="44"/>
         </Grid.RowDefinitions>
+        <Rectangle  Fill="Orange"  Height="1" VerticalAlignment="Top"/>
         <StackPanel  Orientation="Horizontal" Margin="0,0,0,0" >
-
+            
             <TextBox  
-                      BorderThickness="2"  
+                      BorderThickness="0"  
                       Margin="20,0,0,0" 
                       VerticalAlignment="Center" 
-                      PlaceholderText="姓名" />
+                      PlaceholderText="姓名" Padding="12,6,6,5" />
 
             <ComboBox 
-                      BorderThickness="2" 
+                      BorderThickness="0" 
                       Margin="20,0,0,0" 
                       VerticalAlignment="Center"
                       PlaceholderText="性别"
                       >
+                
                 <ComboBoxItem Content="男"/>
                 <ComboBoxItem Content="女"/>
             </ComboBox>
             
             <CalendarDatePicker 
-                BorderThickness="2" 
+                BorderThickness="0" 
                 PlaceholderText="出生日期"
                 VerticalAlignment="Center"
                 Margin="20,0,0,0"
